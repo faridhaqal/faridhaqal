@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Matematika</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav-link" id="menu-link">Menu</a>
+                <a href="profile.html" class="nav-link" id="profile-link">Profil Kelompok</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content" id="intro">
+        <div class="container">
+            <div class="intro">
+                <h1>Selamat Datang di Kuis Matematika</h1>
+                <p>Uji kemampuan matematika Anda dengan soal-soal perkalian, pengurangan, pembagian, dan penjumlahan.</p>
+                <button class="start-button" onclick="startQuiz()">Mulai</button>
+            </div>
+        </div>
+    </main>
+    <div class="quiz" id="quiz" style="display: none;">
+        <div class="quiz-container">
+            <h2 id="question" style="font-size: 2rem; text-align: center;"></h2>
+            <input type="number" id="answer" placeholder="Jawaban Anda">
+            <button onclick="submitAnswer()">Kirim</button>
+            <p id="feedback"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('menu-link').classList.add('active');
+    </script>
+</body>
+</html>
+
